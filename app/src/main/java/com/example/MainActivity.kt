@@ -1,4 +1,4 @@
-package com.example.ui
+package com.example
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -56,6 +56,8 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.window.Dialog
+import com.example.ui.AppTab
+import com.example.ui.MainViewModel
 import com.example.ui.screens.AiChatScreen
 import com.example.ui.screens.AiImageGenScreen
 import com.example.ui.screens.ChannelsScreen

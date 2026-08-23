@@ -1,0 +1,6 @@
+{
+  "name": "BD IPTV",
+  "description": "Live Bangladesh & International TV streaming player, EPG TV guide, Gemini AI entertainment assistant, and 4K AI poster creator for tv.bdiptv.net.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

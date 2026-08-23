@@ -32,7 +32,6 @@ import androidx.compose.material.icons.filled.Close
 import androidx.compose.material.icons.filled.ContentCopy
 import androidx.compose.material.icons.filled.Download
 import androidx.compose.material.icons.filled.HighQuality
-import androidx.compose.material.icons.filled.Image
 import androidx.compose.material.icons.filled.PhotoSizeSelectActual
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
@@ -578,7 +577,7 @@ fun RenderImageContent(
       modifier = Modifier.padding(16.dp)
     ) {
       Icon(
-        imageVector = Icons.Default.Image,
+        imageVector = Icons.Default.PhotoSizeSelectActual,
         contentDescription = null,
         tint = BdiptvGreenPrimary,
         modifier = Modifier.size(36.dp)

@@ -34,6 +34,19 @@ jobs:
             chmod +x ./gradlew
           fi
 
+      - name: Prepare Build Environment & Keystore
+        run: |
+          # Create .env from template if not present
+          if [ ! -f ".env" ] && [ -f ".env.example" ]; then
+            cp .env.example .env
+          fi
+
+          # Generate debug.keystore if not already present
+          if [ ! -f "debug.keystore" ]; then
+            echo "Generating debug.keystore..."
+            keytool -genkeypair -v -keystore debug.keystore -alias androiddebugkey -keyalg RSA -keysize 2048 -validity 10000 -storepass android -keypass android -dname "CN=Android Debug,O=Android,C=US"
+          fi
+
       - name: Build Debug APK
         run: ./gradlew assembleDebug --stacktrace
 
